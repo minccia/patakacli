@@ -1,4 +1,4 @@
-from choicefunction import ChoiceFunction
+from .choicefunction import ChoiceFunction
 
 class Choice:
     def __init__(self, trigger, title, choicefunction):

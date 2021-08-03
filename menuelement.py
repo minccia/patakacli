@@ -1,4 +1,4 @@
-from choicefunction import ChoiceFunction
+from .choicefunction import ChoiceFunction
 from choice import Choice
 
 class MenuElement:
