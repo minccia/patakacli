@@ -12,7 +12,7 @@ class Choice:
     def get_string(self):
         return f'[{self.trigger}] {self.title}'
 
-
+# Testing the class
 if __name__ == '__main__':
     def dar_pao(nome):
         print(f'{nome} tome um pao')
