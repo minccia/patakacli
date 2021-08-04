@@ -1,5 +1,5 @@
 from .choicefunction import ChoiceFunction
-from choice import Choice
+from .choice import Choice
 
 class MenuElement:
     def __init__(self, title):
@@ -12,7 +12,6 @@ class MenuElement:
         
         for choice in self.choices:
             print(choice.get_string())
-            print('')
 
     def get_response(self):
         chosen_option = input('Qual é a opção escolhida? \n\nDigite aqui: ')
@@ -30,7 +29,7 @@ class MenuElement:
         print('Invalid, please try an accepted option.')
         self.run()
 
-    def add_choice(self, function, parameters, title, trigger=None):
+    def add_choice(self, title, function, parameters=[], trigger=None):
         if not trigger:
             trigger = str(len(self.choices)+1)
 
